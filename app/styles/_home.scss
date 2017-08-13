@@ -1,6 +1,6 @@
 .menu {
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     display: inline-flex;
     position: absolute;
     padding: 0;
@@ -17,5 +17,26 @@
         position: absolute;
         right: 0;
         display: inline-flex;
+    }
+}
+
+.featured {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    &__image {
+        z-index: 2;
+        position: fixed;
+        width: 500px;
+        height: 400px;
+        top: 15%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 10px solid $white;
     }
 }

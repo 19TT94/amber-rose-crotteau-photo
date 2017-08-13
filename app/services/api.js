@@ -2,20 +2,24 @@ import Ember from 'ember';
 
 const home = [
     {
-        'color':''
-        'url':'https://placehold.it/500x200';
+        'color':'#FFCEE5',
+        'url':'/images/cat3.jpg'
     },
     {
-        'color':''
-        'url':'https://placehold.it/500x200';
+        'color':'#FCF6BD',
+        'url':'/images/human1.jpg'
     },
     {
-        'color':''
-        'url':'https://placehold.it/500x200';
+        'color':'#D0F4DE',
+        'url':'/images/land2.jpg'
     },
     {
-        'color':''
-        'url':'https://placehold.it/500x200';
+        'color':'#A9DEF9',
+        'url':'/images/ocean1.jpg'
+    },
+    {
+        'color':'#E4C1F9',
+        'url':'/images/surf1.jpg'
     }
 ];
 
@@ -25,10 +29,7 @@ export default Ember.Service.extend({
 
     getHome() {
         return new Ember.RSVP.Promise((res, rej) => {
-            // on sucess
             res(home);
-            //on failure
-            //rej(reason);
         });
     }
 

@@ -8,13 +8,22 @@
 
 {{outlet}}
 
+{{#each model as |home|}}
+    <div class="featured__image"style="background-image:url('{{home.url}}');"></div>
+{{/each}}
+
 {{#fullpage-js}}
 
     <div id="fullpage">
-    	<div class="section">Some section</div>
-    	<div class="section">Some section</div>
-    	<div class="section">Some section</div>
-    	<div class="section">Some section</div>
+        {{#each model as |home|}}
+            <div class="section featured" style="background-color:{{home.color}}"></div>
+        {{/each}}
+        <div class="section about" style="background-color:{{home.color}}">
+            <h1 class="about__title">About</h1>
+        </div>
+        <div class="section contact" style="background-color:{{home.color}}">
+            <h1 class="contacts__title">Contact</h1>
+        </div>
     </div>
 
 {{/fullpage-js}}
