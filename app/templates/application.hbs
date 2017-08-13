@@ -1,14 +1,14 @@
 <ul class="menu">
-    <li class="menu__icon"><a href="#">Amber Rose Crotteau Photography</a></li>
+    <li class="menu__icon"><a href="/wild">Amber Rose Crotteau Photography</a></li>
     <div class="menu__right">
-        <li class="menu__link"><a href="#">About</a></li>
-        <li class="menu__link"><a href="#">Contact</a></li>
+        <li class="menu__link"><a href="#about">About</a></li>
+        <li class="menu__link"><a href="#contact">Contact</a></li>
     </div>
 </ul>
 
 <ul class="category">
     {{#each model as |home|}}
-            <li class="category__item"><a href="#">{{home.button}}</a></li>
+            <li class="category__item"><a href="#{{home.button}}">{{home.button}}</a></li>
     {{/each}}
 </ul>
 
@@ -17,18 +17,18 @@
 
 {{#fullpage-js}}
 
-    <div id="fullpage">
         {{#each model as |home|}}
-            <div class="section featured" style="background-color:{{home.color}}">
-                <div class="featured__image"style="background-image:url('{{home.url}}');"></div>
+            <div class="section featured" style="background:{{home.color}}" data-anchor="{{home.button}}">
+                <div class="featured__mask">
+                    <div class="featured__image"style="background-image:url('{{home.url}}');"></div>
+                </div>
             </div>
         {{/each}}
-        <div class="fp-auto-height section about" style="background-color:{{home.color}}">
+        <div class="fp-auto-height section about" style="background-color:{{home.color}}" data-anchor="about">
             <h1 class="about__title">About</h1>
         </div>
-        <div class="fp-auto-height section contact" style="background-color:{{home.color}}">
+        <div class="fp-auto-height section contact" style="background-color:{{home.color}}" data-anchor="contact">
             <h1 class="contacts__title">Contact</h1>
         </div>
-    </div>
 
 {{/fullpage-js}}
