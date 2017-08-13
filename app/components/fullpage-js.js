@@ -6,9 +6,8 @@ export default Ember.Component.extend({
         let self = this;
         Ember.run.scheduleOnce('afterRender', () => {
             Ember.$(this.element).fullpage({
-                menu: 'dots',
+                fadingEffect: true,
                 navigation: false,
-                navigationPosition: 'right',
                 onLeave: function(index, nextIndex, direction) {
 
                 }
