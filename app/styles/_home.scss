@@ -20,6 +20,13 @@
     }
 }
 
+.category {
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    bottom: 15%;
+}
+
 .featured {
     position: relative;
     width: 100vw;
@@ -27,12 +34,12 @@
 
     &__image {
         z-index: 2;
-        position: fixed;
+        // position: fixed;
         width: 500px;
         height: 400px;
-        top: 15%;
-        left: 0;
-        right: 0;
+        // top: 15%;
+        // left: 0;
+        // right: 0;
         margin: 0 auto;
         background-position: center;
         background-size: cover;

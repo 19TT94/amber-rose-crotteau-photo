@@ -6,17 +6,21 @@
     </div>
 </ul>
 
-{{outlet}}
+<ul class="category">
+    {{#each model as |home|}}
+            <li class="category__item"><a href="#">{{home.button}}</a></li>
+    {{/each}}
+</ul>
 
-{{#each model as |home|}}
-    <div class="featured__image"style="background-image:url('{{home.url}}');"></div>
-{{/each}}
+{{outlet}}
 
 {{#fullpage-js}}
 
     <div id="fullpage">
         {{#each model as |home|}}
-            <div class="section featured" style="background-color:{{home.color}}"></div>
+            <div class="section featured" style="background-color:{{home.color}}">
+                <div class="featured__image"style="background-image:url('{{home.url}}');"></div>
+            </div>
         {{/each}}
         <div class="section about" style="background-color:{{home.color}}">
             <h1 class="about__title">About</h1>
