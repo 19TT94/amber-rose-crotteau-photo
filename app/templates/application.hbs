@@ -12,6 +12,7 @@
     {{/each}}
 </ul>
 
+<div class="featured__mask"></div>
 
 {{outlet}}
 
@@ -19,7 +20,7 @@
 
         {{#each model as |home|}}
             <div class="section featured" style="background:{{home.color}}" data-anchor="{{home.button}}">
-                <div class="featured__mask">
+                <div class="featured__wrapper">
                     <div class="featured__image"style="background-image:url('{{home.url}}');"></div>
                 </div>
             </div>

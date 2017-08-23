@@ -3,32 +3,32 @@ import Ember from 'ember';
 const home = [
     {
         'button':'wild',
-        'color':'linear-gradient(to bottom, #F4AD97 50%, #FFADC6 100%)',
+        'color':'linear-gradient(to bottom, #FFCABA 80%, #FCD4DE 100%)',
         'url':'/images/cat3.jpg'
     },
     {
         'button':'humans',
-        'color':'linear-gradient(to bottom, #FFADC6 50%, #DDBAC3 100%)',
+        'color':'linear-gradient(to bottom, #FCD4DE 80%, #E0E2DB 100%)',
         'url':'/images/human1.jpg'
     },
     {
         'button':'land',
-        'color':'linear-gradient(to bottom, #DDBAC3 50%, #FFE4DB 100%)',
+        'color':'linear-gradient(to bottom, #E0E2DB 80%, #B4CEB3 100%)',
         'url':'/images/land2.JPG'
     },
     {
         'button':'sea',
-        'color':'linear-gradient(to bottom, #FFE4DB 50%, #88A0A8 100%)',
+        'color':'linear-gradient(to bottom, #B4CEB3 80%, #CFE8EF 100%)',
         'url':'/images/ocean1.jpg'
     },
     {
         'button':'surf',
-        'color':'linear-gradient(to bottom, #88A0A8 50%, #B4CEB3 100%)',
+        'color':'linear-gradient(to bottom, #CFE8EF 80%, #91B7C7 100%)',
         'url':'/images/surf1.jpg'
     },
     {
         'button':'sand',
-        'color':'#B4CEB3',
+        'color':'#91B7C7',
         'url':'/images/surf1.jpg'
     }
 ];
