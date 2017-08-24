@@ -6,7 +6,12 @@
     padding: 0;
 
     &__icon {
-        padding: 1rem;
+        margin: .5rem 1rem;
+        width: 30px;
+        height: 30px;
+        background-image: url('/images/amberrose.png');
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     &__link {
@@ -20,11 +25,22 @@
     }
 }
 
+.title {
+    z-index: 3;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+
 .category {
     z-index: 3;
     position: fixed;
     left: 0;
-    bottom: 40%;
+    bottom: 30%;
+
+    &__item {
+        padding: .5rem;
+    }
 }
 
 .featured {
@@ -50,6 +66,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         border: 10px solid $white;
+        // opacity: 0;
+        transition: all 1s ease;
     }
 }
 

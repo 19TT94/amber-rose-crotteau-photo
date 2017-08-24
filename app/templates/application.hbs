@@ -1,10 +1,12 @@
 <ul class="menu">
-    <li class="menu__icon"><a href="/">Amber Rose Crotteau Photography</a></li>
+    <a class="menu__icon" href="/"></a>
     <div class="menu__right">
         <li class="menu__link"><a href="#about">About</a></li>
         <li class="menu__link"><a href="#contact">Contact</a></li>
     </div>
 </ul>
+
+<a class="title" href="/"><h1>Amber Rose Crotteau Photo</h1></a>
 
 <ul class="category">
     {{#each model as |home|}}
@@ -19,7 +21,7 @@
         {{#each model as |home|}}
             <div class="section featured" style="background:{{home.color}}" data-anchor="{{home.button}}">
                 <div class="featured__wrapper">
-                    <div class="featured__image"style="background-image:url('{{home.url}}');"></div>
+                    <div class="featured__image" style="background-image:url('{{home.url}}');"></div>
                 </div>
             </div>
         {{/each}}
