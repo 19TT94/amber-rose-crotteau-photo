@@ -6,7 +6,9 @@ export default Ember.Component.extend({
         let self = this;
         Ember.run.scheduleOnce('afterRender', () => {
             Ember.$(this.element).fullpage({
-                anchors:['wild', 'humans', 'land', 'sea', 'surf'],
+                menu: '.category',
+		        lockAnchors: false,
+                anchors:['lifestyle', 'people', 'land', 'sea', 'animals'],
                 fadingEffect: true,
                 navigation: false,
                 onLeave: function(index, nextIndex, direction) {

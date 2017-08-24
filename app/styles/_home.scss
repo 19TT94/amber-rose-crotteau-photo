@@ -32,16 +32,6 @@
     width: 100vw;
     height: 100vh;
 
-    &__mask {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate3d(-50%, -50%, 0);
-        z-index: 10;
-        width: 40%;
-        height: 40%;
-    }
-
     &__wrapper {
         position: absolute;
         top: 50%;
@@ -61,4 +51,8 @@
         background-repeat: no-repeat;
         border: 10px solid $white;
     }
+}
+
+.contact {
+    background: $black;
 }

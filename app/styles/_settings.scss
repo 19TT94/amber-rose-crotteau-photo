@@ -1,5 +1,10 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Armata');
+
+// General
 .ember-application {
-    margin: 1rem;
+    font-family: 'Armata', sans-serif;
+    text-transform: lowercase;
 }
 
 // Colors

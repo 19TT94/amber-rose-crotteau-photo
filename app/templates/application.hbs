@@ -8,11 +8,9 @@
 
 <ul class="category">
     {{#each model as |home|}}
-            <li class="category__item"><a href="#{{home.button}}">{{home.button}}</a></li>
+            <li class="category__item"><a href="/#{{home.button}}">{{home.button}}</a></li>
     {{/each}}
 </ul>
-
-<div class="featured__mask"></div>
 
 {{outlet}}
 
