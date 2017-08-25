@@ -14,6 +14,7 @@ export default Ember.Component.extend({
                 onLeave: function(index, direction) {
                     let element = $('.section');
                     if(element.hasClass('active')) {
+                        console.log('active');
                         element.find('.featured__image' + index).addClass('show');
                     }
                 }
