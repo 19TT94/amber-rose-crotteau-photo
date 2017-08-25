@@ -3,28 +3,28 @@ import Ember from 'ember';
 const home = [
     {
         'button':'lifestyle',
-        'color':'#424B54',
-        'url':'/images/cat3.jpg'
+        'color':'#D6D8D2',
+        'url':'/images/lifestyle.jpg'
     },
     {
         'button':'people',
-        'color':'#E0E2DB',
+        'color':'#424B54',
         'url':'/images/human1.jpg'
     },
     {
         'button':'land',
         'color':'#7C90A0',
-        'url':'/images/land2.JPG'
+        'url':'/images/land.jpg'
     },
     {
         'button':'sea',
-        'color':'#CFE8EF',
-        'url':'/images/ocean1.jpg'
+        'color':'#C1D7DD',
+        'url':'/images/surf.jpg'
     },
     {
         'button':'animals',
         'color':'#596869',
-        'url':'/images/surf1.jpg'
+        'url':'/images/cat3.jpg'
     }
 ];
 
