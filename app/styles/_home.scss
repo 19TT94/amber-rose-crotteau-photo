@@ -41,7 +41,18 @@
 
     &__item {
         padding: .5rem;
+        transition: all ease .5s;
+
+        &:hover {
+            transform: translate(15px) scale(1.3);
+        }
     }
+}
+
+.line {
+    width: 3px;
+    height: 25px;
+    background: $white;
 }
 
 .featured {
@@ -67,7 +78,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         border: 10px solid $white;
-        // opacity: 0;
+        opacity: 1;
         transition: all 1s ease;
     }
 }
