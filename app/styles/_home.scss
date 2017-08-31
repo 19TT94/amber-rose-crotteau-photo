@@ -83,6 +83,20 @@
     }
 }
 
+.collection {
+    width: 100vw;
+    height: 100vh;
+    background: $white;
+    display: none;
+    
+    &__view {
+        position: absolute;
+        bottom: 20%;
+        right: 20%;
+        color: $white;
+    }
+}
+
 .contact {
     background: $black;
 }
