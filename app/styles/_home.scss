@@ -87,8 +87,9 @@
     width: 100vw;
     height: 100vh;
     background: $white;
-    display: none;
-    
+    opacity: 0;
+    // display: none;
+
     &__view {
         position: absolute;
         bottom: 20%;

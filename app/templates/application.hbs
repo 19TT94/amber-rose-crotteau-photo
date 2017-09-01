@@ -26,11 +26,9 @@
                     <div class="featured__image featured__image{{index}}" style="background-image:url('{{home.url}}');"></div>
                 </div>
 
-                <div class="collection">
-                    <div class="collection__close">Close</div>
-                    <!-- Collection Slider -->
-                </div>
-                <div class="collection__view">-> View Collection</div>
+                {{collection-modal}}
+
+                <div class="collection__view" {{action 'toggleModal'}}>-> View Collection</div>
             </div>
         {{/each}}
         <div class="fp-auto-height section about" style="background-color:{{home.color}}" data-anchor="about">
