@@ -2,11 +2,13 @@
 <div class="collection {{if isOpen "show"}}">
     <button class="collection__close" {{action 'close'}}>{{fa-icon 'times'}}</button>
     <!-- Collection Slider -->
-    {{#each model as |home index|}}
-        {{#each home.slides as |slide|}}
-            <img src="{{slide}}">
+    {{#swiper-container class="collection__slider"}}
+        {{#each model as |home index|}}
+            {{#each home.slides as |slide|}}
+                {{#swiper-slide}}<img class="collection__slider--image" src="{{slide}}">{{/swiper-slide}}
+            {{/each}}
         {{/each}}
-    {{/each}}
+    {{/swiper-container}}
 </div>
 
 <button class="collection__view" {{action 'open'}}>{{fa-icon 'long-arrow-right'}} View Collection</button>

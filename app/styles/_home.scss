@@ -123,6 +123,14 @@
         padding: 1rem;
         color: $black;
     }
+
+    &__slider {
+        top: 10%;
+
+        &--image {
+            margin: 0 auto;
+        }
+    }
 }
 
 .about {
