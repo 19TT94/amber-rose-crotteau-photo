@@ -1,12 +1,15 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-    modal: false,
+    isOpen: false,
 
-    actions: {
-        toggleModal: function (element) {
-            console.log("Toggle Modal");
-            this.toggleProperty('modal');
-        }
-    }
+   actions: {
+       open: function (element) {
+           this.set('isOpen', true);
+       },
+
+       close: function (element) {
+           this.set('isOpen', false);
+       }
+   }
 });

@@ -1,7 +1,7 @@
 {{yield}}
-<div class="collection {{if toggleModal 'show'}}">
-    <button class="collection__close" {{action 'toggleModal'}}>Close</button>
+<div class="collection {{if isOpen "show"}}">
+    <button class="collection__close" {{action 'close'}}>{{fa-icon 'times'}}</button>
     <!-- Collection Slider -->
 </div>
 
-<button class="collection__view" {{action 'toggleModal'}}>{{fa-icon 'long-arrow-right'}} View Collection</button>
+<button class="collection__view" {{action 'open'}}>{{fa-icon 'long-arrow-right'}} View Collection</button>
