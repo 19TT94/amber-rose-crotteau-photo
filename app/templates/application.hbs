@@ -1,24 +1,26 @@
-<ul class="menu">
-    <a class="menu__icon" href="#lifestyle"></a>
-    <div class="menu__right">
-        <li class="menu__link"><a href="#about">About</a></li>
-        <li class="menu__link"><a href="#contact">Contact</a></li>
+<div class="fixed">
+    <ul class="menu">
+        <a class="menu__icon" href="#lifestyle"></a>
+        <div class="menu__right">
+            <li class="menu__link"><a href="#about">About</a></li>
+            <li class="menu__link"><a href="#contact">Contact</a></li>
+        </div>
+    </ul>
+
+    <a class="title" href="/"><h1>Amber Rose Crotteau Photo</h1></a>
+
+    <ul class="category">
+        <div class="line"></div>
+        {{#each model as |home|}}
+                <li class="category__item"><a href="/#{{home.button}}">{{home.button}}</a></li>
+        {{/each}}
+        <div class="line"></div>
+    </ul>
+
+    <div class="social">
+        <a class="social__link" href="https://www.instagram.com/amber_crotteau">{{fa-icon 'instagram'}}</a>
+        <a class="social__link" href="https://www.linkedin.com/amber_crotteau">{{fa-icon 'linkedin'}}</a>
     </div>
-</ul>
-
-<a class="title" href="/"><h1>Amber Rose Crotteau Photo</h1></a>
-
-<ul class="category">
-    <div class="line"></div>
-    {{#each model as |home|}}
-            <li class="category__item"><a href="/#{{home.button}}">{{home.button}}</a></li>
-    {{/each}}
-    <div class="line"></div>
-</ul>
-
-<div class="social">
-    <a class="social__link" href="https://www.instagram.com/amber_crotteau">{{fa-icon 'instagram'}}</a>
-    <a class="social__link" href="https://www.linkedin.com/amber_crotteau">{{fa-icon 'linkedin'}}</a>
 </div>
 
 {{outlet}}
@@ -31,13 +33,13 @@
                     <div class="featured__image featured__image{{index}}" style="background-image:url('{{home.url}}');"></div>
                 </div>
 
-                {{collection-modal}}
+                {{collection-modal model=model}}
 
             </div>
         {{/each}}
         <div class="fp-auto-height section about" style="background-color:{{home.color}}" data-anchor="about">
             <div class="about__image"></div>
-            <h1 class="about__title">My Life</h1>
+            <!-- <h1 class="about__title">My Life</h1> -->
             <p class="about__description">
                 I was born and raised in San Luis Obispo California, but currently reside in Long Beach. Capturing moments and memories is what drives me. Whether it's getting up at 5am to shoot surfing and sunrises or spending an evening getting pictures of my cat Suki, the thrill of capturing the beauty of an instant is always there.
             </p>

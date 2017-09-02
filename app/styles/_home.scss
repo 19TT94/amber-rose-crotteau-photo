@@ -31,6 +31,7 @@
     top: 15%;
     left: 10%;
     font-size: 1.2rem;
+    transition: all ease .5s;
 }
 
 .category {
@@ -38,6 +39,7 @@
     position: fixed;
     left: 0;
     bottom: 30%;
+    transition: all ease .5s;
 
     &__item {
         padding: .5rem;
@@ -62,6 +64,7 @@
     padding: 1rem;
     display: inline-block;
     z-index: 3;
+    transition: all ease .5s;
 
     &__link {
         color: $white;
@@ -80,7 +83,6 @@
         top: 50%;
         left: 50%;
         transform: translate3d(-50%, -50%, 0);
-        z-index: 10;
         width: 40%;
         height: 40%;
         pointer-events: none;
@@ -99,11 +101,13 @@
 }
 
 .collection {
+    z-index: 4;
     width: 100vw;
     height: 100vh;
     background: $white;
-    // opacity: 0;
-    display: none;
+    // display: none;
+    transform: translate(-100%);
+    transition: all ease 1s;
 
     &__view {
         position: absolute;
@@ -119,6 +123,11 @@
         padding: 1rem;
         color: $black;
     }
+}
+
+.about {
+    padding: 2rem;
+    text-align: center;
 }
 
 .contact {

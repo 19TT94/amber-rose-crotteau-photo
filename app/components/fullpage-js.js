@@ -9,28 +9,32 @@ export default Ember.Component.extend({
                 menu: '.category',
 		        lockAnchors: false,
                 anchors:['lifestyle', 'people', 'land', 'sea', 'animals'],
-                fadingEffect: true,
+                // css3: false,
                 navigation: false,
                 onLeave: function(index, nextIndex, direction) {
                     let element = $('.section');
                     if(element.hasClass('active')) {
-                        let prev = index-1;
-
-                        // image effects
-                        let imagePrev = '.featured__image' + prev;
-                        let imageNext = '.featured__image' + nextIndex;
-                        // if(index < 5) {
-                        //     if(!$(imagePrev).hasClass('hide')) {
-                        //         element.find(imagePrev).addClass('hide');
-                        //     } else {
-                        //         element.find(imagePrev).removeClass('hide');
-                        //     }
-                        //     if(!$(imageNext).hasClass('hide')) {
-                        //         element.find(imageNext).addClass('hide');
-                        //     } else {
-                        //         element.find(imageNext).removeClass('hide');
-                        //     }
+                        // image fade effects
+                        let currentSlide = $(this);
+                        //going down
+                        // if (direction === 'down') {
+                        //     currentSlide.find('.featured__image').addClass('hide');
+                        // } else {
+                        //     currentSlide.find('.featured__image').removeClass('hide');
                         // }
+
+                        if (nextIndex === 6 || nextIndex === 7) {
+                            // remove menu comoponents
+                            $('.category').css('opacity', '0');
+                            $('.title').css('opacity', '0');
+                            // $('.social').css('opacity', '0');
+                        } else {
+                            // add menu comoponents
+                            $('.category').css('opacity', '1');
+                            $('.title').css('opacity', '1');
+                            $('.social').css('opacity', '1');
+                        }
+
                     }
                 }
             });
