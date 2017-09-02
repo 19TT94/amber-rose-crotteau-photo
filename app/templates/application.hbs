@@ -16,6 +16,11 @@
     <div class="line"></div>
 </ul>
 
+<div class="social">
+    <a class="social__link" href="https://www.instagram.com/amber_crotteau">{{fa-icon 'instagram'}}</a>
+    <a class="social__link" href="https://www.linkedin.com/amber_crotteau">{{fa-icon 'linkedin'}}</a>
+</div>
+
 {{outlet}}
 
 {{#fullpage-js}}
@@ -28,11 +33,18 @@
 
                 {{collection-modal}}
 
-                <div class="collection__view" {{action 'toggleModal'}}>-> View Collection</div>
             </div>
         {{/each}}
         <div class="fp-auto-height section about" style="background-color:{{home.color}}" data-anchor="about">
-            <h1 class="about__title">About</h1>
+            <div class="about__image"></div>
+            <h1 class="about__title">My Life</h1>
+            <p class="about__description">
+                I was born and raised in San Luis Obispo California, but currently reside in Long Beach. Capturing moments and memories is what drives me. Whether it's getting up at 5am to shoot surfing and sunrises or spending an evening getting pictures of my cat Suki, the thrill of capturing the beauty of an instant is always there.
+            </p>
+
+            <div class="about__social">
+
+            </div>
         </div>
         <div class="fp-auto-height section contact" style="background-color:{{home.color}}" data-anchor="contact">
             <h1 class="contacts__title">Contact</h1>
