@@ -5,7 +5,7 @@
     {{#swiper-container class="collection__slider"}}
         {{#each model as |home index|}}
             {{#each home.slides as |slide|}}
-                {{#swiper-slide}}<img class="collection__slider--image" src="{{slide}}">{{/swiper-slide}}
+                {{#swiper-slide style="background-image:url('{{slide}}')"}}{{/swiper-slide}}
             {{/each}}
         {{/each}}
     {{/swiper-container}}

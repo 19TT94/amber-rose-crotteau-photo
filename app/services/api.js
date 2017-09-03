@@ -6,9 +6,9 @@ const home = [
         'color':'#D6D8D2',
         'url':'/images/lifestyle.jpg',
         'slides': [
-            'https://placehold.it/500x500',
-            'https://placehold.it/500x500',
-            'https://placehold.it/500x500'
+            '/images/lifestyle.jpg',
+            '/images/lifestyle1.jpg',
+            '/images/lifestyle2.jpg'
         ]
     },
     {
@@ -16,9 +16,9 @@ const home = [
         'color':'#424B54',
         'url':'/images/human1.jpg',
         'slides': [
-            'https://placehold.it/500x500',
-            'https://placehold.it/500x500',
-            'https://placehold.it/500x500'
+            '/images/human1.jpg',
+            '/images/human.jpg',
+            '/images/human2.jpg'
         ]
     },
     {
@@ -26,9 +26,9 @@ const home = [
         'color':'#7C90A0',
         'url':'/images/land.jpg',
         'slides': [
-            'https://placehold.it/500x500',
-            'https://placehold.it/500x500',
-            'https://placehold.it/500x500'
+            '/images/land.jpg',
+            '/images/land1.jpg',
+            '/images/land2.jpg'
         ]
     },
     {
@@ -36,9 +36,9 @@ const home = [
         'color':'#C1D7DD',
         'url':'/images/surf.jpg',
         'slides': [
-            'https://placehold.it/500x500',
-            'https://placehold.it/500x500',
-            'https://placehold.it/500x500'
+            '/images/surf.jpg',
+            '/images/surf1.jpg',
+            '/images/surf2.jpg'
         ]
     },
     {
@@ -46,9 +46,9 @@ const home = [
         'color':'#596869',
         'url':'/images/cat3.jpg',
         'slides':[
-            'https://placehold.it/500x500',
-            'https://placehold.it/500x500',
-            'https://placehold.it/500x500'
+            '/images/cat3.jpg',
+            '/images/cat.jpg',
+            '/images/cat1.jpg'
         ]
     }
 ];

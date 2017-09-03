@@ -122,13 +122,14 @@
         right: 0;
         padding: 1rem;
         color: $black;
+        z-index: 2
     }
 
     &__slider {
-        top: 10%;
+        // top: 10%;
 
         &--image {
-            margin: 0 auto;
+            // margin: 0 auto;
         }
     }
 }
@@ -136,6 +137,20 @@
 .about {
     padding: 2rem;
     text-align: center;
+
+    &__image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-image: url('/images/amber.JPG');
+        background-position: center;
+        background-size: cover;
+        display: inline-block;
+    }
+
+    &__discription {
+        display: inline-block;
+    }
 }
 
 .contact {
