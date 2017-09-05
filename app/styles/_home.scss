@@ -150,11 +150,19 @@
         display: inline-block;
     }
 
-    &__discription {
+    &__description {
         display: inline-block;
+        text-transform: none;
     }
 }
 
 .contact {
     background: $black;
+    color: $white;
+
+    &__email {
+        // position: absolute;
+        padding: 1rem;
+        // left: 0;
+    }
 }
