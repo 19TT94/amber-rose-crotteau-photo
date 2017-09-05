@@ -29,6 +29,7 @@
     "ember-cli-sass": "^7.0.0",
     "ember-cli-shims": "^1.1.0",
     "ember-cli-sri": "^2.1.0",
+    "ember-cli-surge": "^1.1.20",
     "ember-cli-swiper": "^0.6.0",
     "ember-cli-uglify": "^1.2.0",
     "ember-data": "^2.13.0",
