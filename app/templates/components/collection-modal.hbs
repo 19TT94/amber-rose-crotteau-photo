@@ -2,12 +2,16 @@
 <div class="collection {{if isOpen "show"}}">
     <button class="collection__close" {{action 'close'}}>{{fa-icon 'times'}}</button>
     <!-- Collection Slider -->
-    {{#swiper-container class="collection__slider"}}
-        {{#each model as |home index|}}
-            {{#each home.slides as |slide|}}
-                {{#swiper-slide style="background-image:url('{{slide}}')"}}{{/swiper-slide}}
-            {{/each}}
-        {{/each}}
+    {{#swiper-container class="collection__slider" pagination=true loop=true}}
+        {{#swiper-slide}}
+            <img class="collection__slider--slide" src="{{home.slide}}">
+        {{/swiper-slide}}
+        {{#swiper-slide}}
+            <img class="collection__slider--slide" src="{{home.slide1}}">
+        {{/swiper-slide}}
+        {{#swiper-slide}}
+            <img class="collection__slider--slide" src="{{home.slide2}}">
+        {{/swiper-slide}}
     {{/swiper-container}}
 </div>
 

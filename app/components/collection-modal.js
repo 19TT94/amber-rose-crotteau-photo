@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
     isOpen: false,
 
-   actions: {
+    actions: {
        open: function (element) {
            this.set('isOpen', true);
            $('.fixed').css('display', 'none');
@@ -13,5 +13,5 @@ export default Ember.Component.extend({
            this.set('isOpen', false);
            $('.fixed').css('display', 'block');
        }
-   }
+    }
 });
