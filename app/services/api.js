@@ -5,7 +5,7 @@ const home = [
         'button':'lifestyle',
         'color':'#D6D8D2',
         'url':'/images/lifestyle.JPG',
-        'slide':'/images/lifestyle.jpg',
+        'slide':'/images/lifestyle.JPG',
         'slide1':'/images/lifestyle1.jpg',
         'slide2':'/images/lifestyle2.jpg'
     },
