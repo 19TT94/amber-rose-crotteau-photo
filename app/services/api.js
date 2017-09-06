@@ -4,7 +4,7 @@ const home = [
     {
         'button':'lifestyle',
         'color':'#D6D8D2',
-        'url':'/images/lifestyle.jpg',
+        'url':'/images/lifestyle.JPG',
         'slide':'/images/lifestyle.jpg',
         'slide1':'/images/lifestyle1.jpg',
         'slide2':'/images/lifestyle2.jpg'
@@ -30,8 +30,8 @@ const home = [
         'color':'#C1D7DD',
         'url':'/images/surf5.JPG',
         'slide':'/images/surf5.JPG',
-        'slide1':'/images/surf1.jpg',
-        'slide2':'/images/surf2.jpg'
+        'slide1':'/images/surf1.JPG',
+        'slide2':'/images/surf2.JPG'
     },
     {
         'button':'animals',
